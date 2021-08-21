@@ -16,6 +16,7 @@
 		D3245D2126D1A2BD00728CCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3245D1F26D1A2BD00728CCA /* LaunchScreen.storyboard */; };
 		D3245D2C26D1A2BD00728CCA /* A_lcool_ou_GasolinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3245D2B26D1A2BD00728CCA /* A_lcool_ou_GasolinaTests.swift */; };
 		D3245D3726D1A2BD00728CCA /* A_lcool_ou_GasolinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3245D3626D1A2BD00728CCA /* A_lcool_ou_GasolinaUITests.swift */; };
+		D3245D4526D1BB6900728CCA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D3245D4426D1BB6900728CCA /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D3245D3226D1A2BD00728CCA /* Álcool ou GasolinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Álcool ou GasolinaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3245D3626D1A2BD00728CCA /* A_lcool_ou_GasolinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A_lcool_ou_GasolinaUITests.swift; sourceTree = "<group>"; };
 		D3245D3826D1A2BD00728CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3245D4426D1BB6900728CCA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		D3245D1026D1A2BC00728CCA /* Álcool ou Gasolina */ = {
 			isa = PBXGroup;
 			children = (
+				D3245D4426D1BB6900728CCA /* logo.png */,
 				D3245D1126D1A2BC00728CCA /* AppDelegate.swift */,
 				D3245D1326D1A2BC00728CCA /* SceneDelegate.swift */,
 				D3245D1526D1A2BC00728CCA /* ViewController.swift */,
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3245D4526D1BB6900728CCA /* logo.png in Resources */,
 				D3245D2126D1A2BD00728CCA /* LaunchScreen.storyboard in Resources */,
 				D3245D1E26D1A2BD00728CCA /* Assets.xcassets in Resources */,
 				D3245D1926D1A2BC00728CCA /* Main.storyboard in Resources */,
