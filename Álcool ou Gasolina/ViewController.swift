@@ -25,10 +25,10 @@ class ViewController: UIViewController {
                 //Validar os valores digitados
                 let validaCampos = self.validarCampos(precoAlcool: precoAlcool, precoGasolina: precoGasolina)
                 
-                if validaCampos {
+                if validaCampos{
                     
                     //Cálculo do melhor combustível.
-                    
+                    self.calcularMelhorCombustivel(precoAlcool: precoAlcool, precoGasolina: precoGasolina)
                 }else {
                     
                     resultadoLegenda.text = "Antes de calcular, você precisa preencher os 2 campos"
@@ -39,6 +39,38 @@ class ViewController: UIViewController {
         }
         
     }
+    //Método para calcular o combustível
+    func calcularMelhorCombustivel( precoAlcool: String,precoGasolina: String ){
+        //Converte valores de texto para números
+        
+        if let valorAlcool = Double(precoAlcool){
+            if let valorGasolina = Double(precoGasolina){
+                
+                /* Faz Cálculo (Preço do Álcool / Preço da Gasolina)
+                 Se resultado for >= 0.7 melhor utilizar gasolina
+                 senao melhor utilizar Álcool
+                */
+                
+                //Cálculo do melhor combustível
+                let resultadoPreco = valorAlcool / valorGasolina
+                if resultadoPreco >= 0.7{
+                    
+                    self.resultadoLegenda.text = "Melhor utilizar Gasolina!!"
+                    
+                }else{
+                    
+                    self.resultadoLegenda.text = "Melhor utilizar Álcool!!"
+                    
+                }
+                
+                
+            }
+            
+        }
+        
+    }
+    
+    
     //Métodos para validar os valores digitados
     func validarCampos(precoAlcool: String,precoGasolina: String ) -> Bool{
         
