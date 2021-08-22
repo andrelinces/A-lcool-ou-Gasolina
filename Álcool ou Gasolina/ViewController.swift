@@ -20,9 +20,19 @@ class ViewController: UIViewController {
         
         //criando constantes para recuperar os valores digitados, utilizando if para garantir os valores digitados.
         if let precoAlcool = precoAlcoolCampo.text{
-            if let precoAlcool = precoAlcoolCampo.text{
+            if let precoGasolina = precoGasolinaCampo.text{
                 
                 //Validar os valores digitados
+                let validaCampos = self.validarCampos(precoAlcool: precoAlcool, precoGasolina: precoGasolina)
+                
+                if validaCampos {
+                    
+                    //Cálculo do melhor combustível.
+                    
+                }else {
+                    
+                    resultadoLegenda.text = "Antes de calcular, você precisa preencher os 2 campos"
+                }
                 
             }
             
@@ -30,8 +40,19 @@ class ViewController: UIViewController {
         
     }
     //Métodos para validar os valores digitados
-    func validarCampos(){
+    func validarCampos(precoAlcool: String,precoGasolina: String ) -> Bool{
         
+        var camposValidados = true
+        
+        //teste utilizando isEmpty para verificar se o campo está vazio.
+        if precoAlcool.isEmpty{
+            camposValidados = false
+        }else if precoGasolina.isEmpty {
+            camposValidados = false
+        }
+            
+        
+        return camposValidados
         
     }
     
